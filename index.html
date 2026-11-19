@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>KareemTube — تحميل</title>
+<meta name="description" content="حمّل KareemTube لأندرويد: نزّل الفيديوهات والموسيقى بضغطة واحدة.">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#FFCE24">
+<style>
+  :root {
+    --bg: #ffffff; --ink: #1c1d21; --muted: #63656d; --card: #f4f5f7; --line: #e7e8eb;
+    --gold: #ffce24; --gold-ink: #1c1d21;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #151619; --ink: #f4f4f4; --muted: #b5b7be; --card: #222429; --line: #2f3137; color-scheme: dark; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Tahoma, "Noto Sans Arabic", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 34rem; margin: 0 auto; padding: max(2.5rem, env(safe-area-inset-top)) 1.25rem 3rem; }
+  .hero { text-align: center; }
+  .hero img { width: 104px; height: 104px; border-radius: 26px; box-shadow: 0 10px 30px rgba(0,0,0,.12); }
+  h1 { font-size: 2rem; margin: 1rem 0 .25rem; letter-spacing: -.01em; }
+  .tag { color: var(--muted); margin: 0 0 1.75rem; }
+  .download {
+    display: flex; align-items: center; justify-content: center; gap: .6rem;
+    width: 100%; min-height: 64px; padding: 1rem 1.25rem;
+    background: var(--gold); color: var(--gold-ink); border-radius: 18px;
+    font-size: 1.25rem; font-weight: 700; text-decoration: none;
+    box-shadow: 0 6px 18px rgba(255,206,36,.35); transition: transform .12s ease, box-shadow .12s ease;
+  }
+  .download:active { transform: scale(.98); box-shadow: 0 3px 10px rgba(255,206,36,.3); }
+  .download:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+  .download svg { width: 26px; height: 26px; flex: none; }
+  .meta { color: var(--muted); font-size: .9rem; text-align: center; margin: .75rem 0 0; }
+  h2 { font-size: 1.15rem; margin: 2.5rem 0 1rem; }
+  ol { list-style: none; padding: 0; margin: 0; display: grid; gap: .75rem; }
+  li { display: flex; gap: .9rem; align-items: flex-start; background: var(--card); border-radius: 14px; padding: .9rem 1rem; }
+  .num {
+    flex: none; width: 30px; height: 30px; border-radius: 50%; background: var(--gold); color: var(--gold-ink);
+    display: grid; place-items: center; font-weight: 700; font-size: .95rem;
+  }
+  li b { display: block; }
+  li span { color: var(--muted); font-size: .92rem; }
+  .note { margin-top: 1.5rem; padding: 1rem; border: 1px solid var(--line); border-radius: 14px; color: var(--muted); font-size: .92rem; }
+  .note b { color: var(--ink); }
+  footer { text-align: center; color: var(--muted); font-size: .8rem; margin-top: 2.5rem; }
+  footer a { color: inherit; }
+</style>
+</head>
+<body>
+<main>
+  <section class="hero">
+    <img src="icon.svg" alt="" width="104" height="104">
+    <h1>KareemTube</h1>
+    <p class="tag">نزّل الفيديوهات والموسيقى على موبايلك بضغطة واحدة.</p>
+    <a class="download" id="download" href="https://github.com/kareem-apps/kareem-apps.github.io/releases/latest/download/kareemtube.apk">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg>
+      تحميل KareemTube
+    </a>
+    <p class="meta" id="meta">لأندرويد 7 أو أحدث (موبايلات 64-بت)</p>
+  </section>
+
+  <h2>إزاي تسطّبه</h2>
+  <ol>
+    <li><div class="num">1</div><div><b>دوس على زرار التحميل</b><span>هينزل ملف اسمه kareemtube.apk.</span></div></li>
+    <li><div class="num">2</div><div><b>افتح الملف من الإشعار أو من التنزيلات</b><span>لو الموبايل سألك، اختار «الإعدادات» وفعّل «السماح من هذا المصدر»، وارجع.</span></div></li>
+    <li><div class="num">3</div><div><b>دوس «تثبيت»</b><span>خلاص، افتح KareemTube واستخدمه.</span></div></li>
+  </ol>
+
+  <div class="note"><b>التحديثات بتوصلك لوحدها.</b> لما ينزل إصدار جديد، البرنامج هيقولك «فيه تحديث جديد» — دوسة على «تحديث» وبعدين «تثبيت»، ومش محتاج ترجع للصفحة دي تاني.</div>
+
+  <footer>© 2026 KareemTube</footer>
+</main>
+<script>
+  // Show the current version and size from version.json (the same file the app's updater reads).
+  fetch('version.json', { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(v => {
+    if (!v) return;
+    const mb = v.size ? ' · ' + (v.size / 1048576).toFixed(0) + ' ميجا' : '';
+    document.getElementById('meta').textContent = 'الإصدار ' + v.versionName + mb + ' · لأندرويد 7 أو أحدث (موبايلات 64-بت)';
+  }).catch(() => {});
+</script>
+</body>
+</html>
