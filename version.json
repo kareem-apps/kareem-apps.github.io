@@ -1,9 +1,9 @@
 {
-  "versionCode": 2,
-  "versionName": "1.0",
-  "apk": "https://github.com/kareem-apps/kareem-apps.github.io/releases/download/v1.0/kareemtube.apk",
-  "sha256": "4456f287d84d87427c110527f55c9a6797221c43543a622de1fd127539f70d1d",
-  "size": 56763890,
-  "notes": "First public version: full-screen player and in-app updates.",
-  "notesAr": "أول إصدار عام: مشغّل فيديو جديد بملء الشاشة، والتحديثات بقت بتوصل جوه البرنامج."
+  "versionCode": 3,
+  "versionName": "1.1",
+  "apk": "https://github.com/kareem-apps/kareem-apps.github.io/releases/download/v1.1/kareemtube.apk",
+  "sha256": "127a6fcf2716454885af71002f5c5b8b35d87033a0d8ad428870d07c24d7e312",
+  "size": 56763906,
+  "notes": "Dark mode switch in Settings",
+  "notesAr": "زر الوضع الداكن مباشرة في الإعدادات"
 }
