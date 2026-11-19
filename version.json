@@ -1,9 +1,9 @@
 {
-  "versionCode": 3,
-  "versionName": "1.1",
-  "apk": "https://github.com/kareem-apps/kareem-apps.github.io/releases/download/v1.1/kareemtube.apk",
-  "sha256": "127a6fcf2716454885af71002f5c5b8b35d87033a0d8ad428870d07c24d7e312",
-  "size": 56763906,
-  "notes": "Dark mode switch in Settings",
-  "notesAr": "زر الوضع الداكن مباشرة في الإعدادات"
+  "versionCode": 4,
+  "versionName": "1.2",
+  "apk": "https://github.com/kareem-apps/kareem-apps.github.io/releases/download/v1.2/kareemtube.apk",
+  "sha256": "87299e12d02fbb0ed57c06d8f671d0f93b1b1a029ed7f4e7d44fb4be22cf5405",
+  "size": 56764550,
+  "notes": "Clearer site icons (YouTube, Instagram, TikTok…)",
+  "notesAr": "أيقونات المواقع أوضح (يوتيوب، إنستجرام، تيك توك…)"
 }
